@@ -1,0 +1,77 @@
+Installing and starting appium in windows
+===============================================
+
+1. Open cmd as admin --> npm install -g appium
+2. type appium --> enter
+
+
+Install appium-doctor
+===================
+
+1. Open a new cmd as admin--> npm install appium-doctor -g
+2. type appium-doctor
+
+Installing android studio
+==========================
+1. Go to android website
+	https://developer.android.com/studio?gclid=Cj0KCQiApY6BBhCsARIsAOI_GjbRggjnDTaTTleaUmfNnYmUwaUgZlMhW43wSTh9PqkCeN-_Go23Ih8aAh-LEALw_wcB&gclsrc=aw.ds
+2. Click on download android studio(Pre-requisite:: Java 8 or above)
+3. Double click the downloaded file and install through wizard
+
+Setting sdk manager and installing android sdk
+------------------------------------------------------
+1. Open android studio--> Go to File-> Settings--> Appearance and Behaviour--> Android SDK
+2. Uncheck Hide Obsolete Packages option
+3. Select andriod versions from the list
+4. Click on Apply-->Ok
+5. It will show installation message --> Start installation
+6. Go to tools--> SDK manager--> set path--> "C:\Users\****\AppData\Local\Android\AndroidStudio
+
+Setting Environment Variables
+=====================================
+1. Copy path -->C:\Users\Koel\AppData\Local\Android\AndroidStudio\platforms
+	-->save in path environment variable
+2. copy path --> C:\Users\Koel\AppData\Local\Android\AndroidStudio\platforms-tools
+	-->save in path environment variable
+3. copy path --> C:\Users\Koel\AppData\Local\Android\AndroidStudio\tools
+	-->save in path environment variable 
+4.  Create a new system variable --> ANDROID_HOME = C:\Users\Koel\AppData\Local\Android\AndroidStudio
+
+
+
+How to connect a real android device as adb device
+---------------------------------------------------------------
+1. Open your android device--> go to settings --> click about phone
+2. Scroll to Build Number option--> Click it for 7 times
+3. Go back to settings --> Developers option will show
+4. Now go to a fresh cmd --> adb devices --> list of connect android devices will show
+
+
+Creating a virtual emulator in android studio
+-----------------------------------------------------------------
+
+1. Tools--> adv Manager -> select any android version
+2. Install the version --> click on done
+3. Go back to adv Manager--> play emulator
+
+
+Downloading Appium Desktop
+--------------------------------
+
+1.Go to -->https://github.com/appium/appium-desktop/releases/tag/v1.19.1
+2. Download the Appium-Windows exe file / Appium-Linux AppImage file
+3. Double click it or run it as admin--> install it through the wizard
+4. Launch it
+5. click on Edit configuration-->set ANDROID_HOME-->C:\Users\Koel\AppData\Local\Android\AndroidStudio
+6. Then set JAVA_HOME -->C:\Program Files\Java\jdk-11.0.9
+7. Start server
+8. You can check by "adb devices" command in cmd
+
+
+
+
+
+
+
+
+
